@@ -1,0 +1,16 @@
+import { chromium } from 'playwright';
+const out = process.argv[2];
+const browser = await chromium.launch({ channel: 'msedge', headless: true, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+page.on('pageerror', (e) => console.log('PAGE ERROR:', e.message));
+await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+await page.waitForFunction(() => window.__sim && window.__sim.placards.items.length > 0, null, { timeout: 60000 });
+await page.click('#enter');
+await page.evaluate(() => { const s = window.__sim; s.player.setPosition(-1.6, 3.0, Math.PI); s.look(Math.PI + 0.55, 0.05); });
+await page.waitForTimeout(500);
+await page.screenshot({ path: `${out}/p1-t1-placard.png` });
+await page.evaluate(() => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 28); s.player.setPosition(18.3 - 3.0, c.zStart - 1.0, Math.PI); s.look(Math.PI + 0.9, 0.0); });
+await page.waitForTimeout(500);
+await page.screenshot({ path: `${out}/p2-t2-placard.png` });
+console.log(await page.evaluate(() => document.getElementById('placard').hidden + ' ' + document.querySelector('#placard h2').textContent));
+await browser.close();

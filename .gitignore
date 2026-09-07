@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.netlify/
+*.blend1
+.DS_Store
+Thumbs.db
+public/_tmp_*

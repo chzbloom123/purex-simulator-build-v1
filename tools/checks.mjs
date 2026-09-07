@@ -1,0 +1,41 @@
+import { chromium, devices } from 'playwright';
+const out = process.argv[2];
+const browser = await chromium.launch({ channel: 'msedge', headless: true, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+page.on('pageerror', (e) => console.log('PAGE ERROR:', e.message));
+page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log('console:', m.text()); });
+await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+await page.waitForFunction(() => window.__sim, null, { timeout: 60000 });
+await page.click('#enter');
+const shot = async (name, fn) => { await page.evaluate(fn); await page.waitForTimeout(400); await page.screenshot({ path: `${out}/${name}.png` }); };
+await shot('c1-t2-door-outside', () => { const s = window.__sim; s.player.setPosition(18.3, 57.9 - 4.6 - 5, Math.PI); s.look(Math.PI, 0.15); });
+await shot('c2-t2-inside-looking-north', () => { const s = window.__sim; s.player.setPosition(18.3 - 2.5, 57.9 + 6, 0); s.look(0.3, 0.2); });
+await shot('c3-spur-bend-fly', () => { const s = window.__sim; s.player.fly = true; s.player.pos.set(6, 5.5, -22); s.look(Math.PI - 0.6, -0.35); });
+await shot('c4-t1-door-vestibule-north', () => { const s = window.__sim; s.player.fly = false; s.player.setPosition(0, -4.6 - 1.5, Math.PI); s.look(Math.PI, 0.25); });
+// door pass-through test
+const before = await page.evaluate(() => { const s = window.__sim; s.player.setPosition(0, s.world.doors[0].zNorth - 1.0, Math.PI); return s.player.pos.z; });
+const after = await page.evaluate(() => { window.__sim.stepThrough(); return window.__sim.player.pos.z; });
+console.log('pass-through z:', before.toFixed(2), '->', after.toFixed(2));
+await shot('c5-after-passthrough', () => { window.__sim.look(Math.PI, 0.05); });
+// collision test: try to walk into a car
+const col = await page.evaluate(() => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 1 && x.pos === 8); s.player.setPosition(0, c.zStart - 1.5, Math.PI); s.player.keys.add('KeyW'); for (let i = 0; i < 200; i++) s.player.update(0.05); s.player.keys.delete('KeyW'); return [s.player.pos.z.toFixed(2), c.zStart.toFixed(2)]; });
+console.log('walked into car: player z', col[0], 'car north end', col[1]);
+await shot('c6-t2-cars-hero', () => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 7); s.player.setPosition(18.3 - 3.2, c.zStart - 4, Math.PI); s.look(Math.PI + 0.45, 0.12); });
+await shot('c7-t1-ha', () => { const s = window.__sim; s.player.setPosition(-2.2, 88, Math.PI); s.look(Math.PI + 0.3, 0.1); });
+await shot('c8-t2-tank-cars', () => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 28); s.player.setPosition(18.3 + 4.3, c.zStart - 3, Math.PI); s.look(Math.PI - 0.55, 0.05); });
+await shot('c9-t2-burial-box', () => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 24); s.player.setPosition(18.3 - 3.4, c.zStart - 3, Math.PI); s.look(Math.PI + 0.5, 0.1); });
+await shot('c10-t2-pulser-fly', () => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 14); s.player.fly = true; s.player.pos.set(18.3 - 4, 5.5, c.zStart - 5); s.look(Math.PI + 0.6, -0.45); });
+await shot('c11-t2-sr15-fly', () => { const s = window.__sim; const c = s.world.cars.find((x) => x.tunnel === 2 && x.pos === 15); s.player.fly = true; s.player.pos.set(18.3 - 4, 5.0, c.zStart - 4); s.look(Math.PI + 0.6, -0.4); });
+await page.close();
+// mobile
+const ctx = await browser.newContext({ ...devices['Pixel 5'] });
+const mp = await ctx.newPage();
+mp.on('pageerror', (e) => console.log('MOBILE PAGE ERROR:', e.message));
+await mp.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+await mp.waitForFunction(() => window.__sim, null, { timeout: 60000 });
+await mp.screenshot({ path: `${out}/m0-entry.png` });
+await mp.tap('#enter');
+await mp.evaluate(() => { const s = window.__sim; s.player.setPosition(-1.6, 3.0, Math.PI); s.look(Math.PI + 0.55, 0.05); });
+await mp.waitForTimeout(500);
+await mp.screenshot({ path: `${out}/m1-t1.png` });
+await browser.close();

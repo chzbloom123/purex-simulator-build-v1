@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch({ channel: 'msedge', headless: true, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+page.on('pageerror', (e) => console.log('PAGE ERROR:', e.stack || e.message));
+page.on('console', (m) => console.log('console:', m.type(), m.text()));
+page.on('requestfailed', (r) => console.log('reqfail', r.url()));
+page.on('response', (r) => { if (r.status() >= 400) console.log('HTTP', r.status(), r.url()); });
+await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+await page.waitForTimeout(3000);
+console.log(await page.evaluate(() => !!window.__sim));
+await browser.close();

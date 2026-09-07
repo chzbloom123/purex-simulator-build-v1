@@ -1,0 +1,133 @@
+// placards-static.js — documented-register placards that are not tied to a railcar.
+// Every body traces to a canon.md line; `source` names the primary document.
+// Positions are in world meters (+X east, +Z south); `face` is the yaw the board faces (radians).
+// Car placards are generated from inventory.js by tools/build-placards.mjs.
+
+export const STATIC = [
+  {
+    id: 'rr-north-limit', register: 'documented',
+    pos: [0, 0, -78.6], face: Math.PI,
+    title: 'The PUREX railroad tunnel',
+    body: 'You are standing in the below-grade railroad tunnel that served the PUREX Plant (202-A). It runs north–south on the west side of the storage basin at the east end of the canyon and connects to a railroad spur outside the building. The two storage tunnels branch off it and extend southward from the east end of the plant; each is isolated from the railroad tunnel by a water-fillable shielding door. North of this point the tunnel continues to the plant, outside the bounds of this simulation.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1; PNL-10705 (WHC-SP-0479 §2.3.7); Harkema et al. 2022',
+  },
+  {
+    id: 'rr-junction', register: 'documented',
+    pos: [3.0, 0, -32], face: -Math.PI / 2,
+    title: 'Where the tunnels branch',
+    body: 'Tunnel 1 (218-E-14) is a straight extension southward from the plant. Tunnel 2 (218-E-15), added in 1964, angles off eastward from the railroad tunnel about 150 feet south of the 202-A Building, then straightens to run parallel to Tunnel 1. Center-line to center-line the two tunnels are about 18.3 meters apart; Tunnel 2’s door is about 57.9 meters south and 18.3 meters east of Tunnel 1’s. The 1964 spur was cast in place.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.2; PNL-10705; CHPRC-03365 §2',
+  },
+  {
+    id: 'rr-locomotive', register: 'documented',
+    pos: [-3.0, 0, -18], face: Math.PI / 2,
+    title: 'How the cars went in',
+    body: 'A remotely controlled, battery-powered locomotive normally moved railcars into and out of the storage tunnels. Before a move, crews charged the locomotive and radio-transmitter batteries, fitted a plastic shroud over the locomotive to ease decontamination, and installed an anti-coupling device on its south coupler. The door was raised, the loaded car was surveyed by health physics, pushed to its storage position, uncoupled, and the water-fillable door was closed behind it. Because each tunnel is a single dead-end track, cars can be removed only in reverse order: last in, first out.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1, 4.1.1.1, 4.1.2.4',
+  },
+  {
+    id: 't1-door', register: 'documented',
+    pos: [-3.0, 0, -6.2], face: Math.PI / 2,
+    title: 'Tunnel 1 water-fillable shielding door',
+    body: 'The door is 7.5 meters high, 6.6 meters wide and 2.1 meters thick, built of 1.3-centimeter steel plate. It is hollow so it can be filled with water as a radiation shield when down. Electric hoists raise it into the reinforced-concrete structure above; the pumps and valves are in a room northwest of the door and the controls were in the PUREX Plant. Beneath the door is a sump with a 15.2-centimeter drain to the railroad-tunnel sump. After the eighth car was placed in January 1965 the door was closed, filled with water, and deactivated electrically. It was drained during the 1995–97 facility transition and the drain was sealed. It has not been raised since.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.1; CRESP Appendix F.6',
+  },
+  {
+    id: 't1-interior', register: 'documented',
+    pos: [-2.75, 0, 2.2], face: Math.PI / 2,
+    title: 'Tunnel 1 (218-E-14) — the timber tunnel',
+    body: 'Approximately 5.8 meters (19 feet) wide, 6.7 meters (22 feet) high and 109 meters (358 feet) long, with storage space for eight railcars. Walls and ceiling are 12-inch by 14-inch creosote pressure-treated No. 1 Douglas fir timbers set side by side with the 12-inch face exposed. The wall timbers rest on reinforced-concrete footings 0.9 meter wide with a 9-inch curb. The floor is railroad track on a gravel bed, ballasted to the top of the ties, flat all the way to the walls, on a 1.0 percent downgrade to the south so the cars stay put. Built 1954–56 as the “Disposal Facility for Failed Equipment”; the first car went in in June 1960.',
+    source: 'DOE/RL-90-24 Rev. 4 Part A and §2.1.1; CRESP Appendix F.6; CHPRC-03585',
+  },
+  {
+    id: 't1-no-entry', register: 'documented',
+    pos: [-2.75, 0, 9], face: Math.PI / 2,
+    title: 'No one has stood here',
+    body: '“Periodic inspection of the equipment stored in the PUREX Storage Tunnels is not feasible because of radiation levels in excess of 5 roentgen per hour.” There are no electrical utilities, water lines, drains, fire detection or suppression systems, radiation monitoring, or communication systems inside either tunnel. Air sampling found oxygen at about 21 percent and carbon dioxide at about 0.3 percent, with no combustible gases; the temperature in Tunnel 1 held at 15.6 °C. Only external inspections were performed. The headlamp you carry is a conceit of this simulation.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1, 2.1.1, 6.2 (citing Rambosek and Foster 1972)',
+  },
+  {
+    id: 't1-concrete-wall', register: 'documented',
+    pos: [-2.75, 0, 16], face: Math.PI / 2,
+    title: 'The concrete east wall',
+    body: 'The first 30.5 meters (about 100 feet) of the east wall are 0.9-meter-thick reinforced concrete rather than timber — the section adjacent to Tunnel 2’s spur. Outside, the timber was wrapped in 90-pound mineral-surface roofing material, nailed with 10-centimeter overlaps, before 2.4 meters (8 feet) of earth fill were placed over the tunnel for weather protection and shielding.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1.1, 6.4.2; CRESP Appendix F.6',
+  },
+  {
+    id: 't1-timber-condition', register: 'documented',
+    pos: [-2.75, 0, 46], face: Math.PI / 2,
+    title: 'The timbers, as evaluated',
+    body: 'Between 1962 and 1980 nine pipe risers were installed through the roof; seven were used to sample the ceiling timbers and two to sample air and temperature. A 1980 survey found the beams within standards for present-day wood. A 1991 independent re-evaluation by Los Alamos Technical Associates found minimal decay or insect damage but ongoing degradation from gamma radiation, estimating the timbers would retain about 60 percent of their original strength in 2001, and recommended re-evaluation if the tunnel had not been emptied by then. That re-evaluation did not happen. On May 9, 2017, a section of the roof timbers failed near the junction with Tunnel 2, opening a hole about 19 by 17 feet; no release was detected, and the tunnel was filled with 4,434 cubic yards of grout that autumn.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.1; CRESP Appendix F.6; Ecology AO Docket #14156; CHPRC-03585; GAO-20-161',
+  },
+  {
+    id: 't1-bumper', register: 'documented',
+    pos: [-2.75, 0, 104.5], face: Math.PI / 2,
+    title: 'The south end of Tunnel 1',
+    body: 'A railcar bumper 2.4 meters from the south end of the track stops the first car. Position 1 is the car that abuts the bumper; the count runs north from here. Above the south end a 1.5-by-1.5-meter reinforced-concrete ventilation shaft rose 0.3 meter above grade to a single-stage HEPA filter, a 283-cubic-meter-per-minute exhaust fan and a 6.1-meter stack. When the tunnel was sealed in January 1965 the fan was de-energized, blanks were installed on both sides of the fan and filter, and the stack was removed. The combined volume of equipment on the eight cars is about 596 cubic meters; the tabulated curies at placement sum to 87,800, decayed to roughly 21,200 by 2003.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1, 2.1.1, 4.1.6.1; CRESP Appendix F.6',
+  },
+  {
+    id: 't2-door', register: 'documented',
+    pos: [15.3, 0, 51.6], face: Math.PI / 2,
+    title: 'Tunnel 2 water-fillable shielding door',
+    body: 'Essentially identical to the Tunnel 1 door: 7.5 meters high, 6.6 meters wide, 2.1 meters thick, hollow steel. Its controls are above the tunnel on the east exterior wall of the door enclosure. The permit records: “Presently, the door is empty and there are no plans to fill it.” With the door closed and the exhaust fan running, the tunnel was held at a slight negative pressure; make-up air infiltrated around the door and through the porosity of the structure and rail ballast. The door was sealed during the 1995–97 deactivation.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1.2, 4.1.4, 4.1.6.2; CRESP Appendix F.6',
+  },
+  {
+    id: 't2-interior', register: 'documented',
+    pos: [13.9, 0, 60.5], face: Math.PI / 2,
+    title: 'Tunnel 2 (218-E-15) — the Quonset arch',
+    body: 'Nominal inside dimensions 514.5 meters (1,688 feet) long, 7.9 meters high and 10.4 meters wide. Built in 1964 in the shape of a Quonset hut: transverse 6-inch steel ribs on a 17-foot-3-inch radius, 37·11/16 inches on center, carrying 3/16-inch stamped corrugated steel roof panels, with exterior reinforced-concrete arches on 15-foot-8¾-inch centers and grade beams 1.8 meters wide by 1.2 meters thick running the full length. Inside and out the steel is coated with a bituminous compound. Because of the arch and the door clearance, the usable storage envelope is the same 6.7 by 5.8 meters as Tunnel 1. Outboard of the 2.4-meter ties the earth floor rises at 1 vertical to 1½ horizontal to about 1.8 meters above the rail bed.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.2; CHPRC-03365 §2 and p.10; CRESP Appendix F.6',
+  },
+  {
+    id: 't2-collapses-1964', register: 'documented',
+    pos: [13.9, 0, 75], face: Math.PI / 2,
+    title: 'The wales, and why they are here',
+    body: 'The longitudinal steel beams hung beneath the ribs are a retrofit. During backfilling in 1964, portions of Tunnel 2 catastrophically collapsed on two separate occasions at different locations. The fixes, recorded in the March 17, 1964 inspection report CAC-964, were these interior steel wale beams, underhung from anchor bolts embedded in new exterior arched concrete rib girders 15 inches wide by 36 inches deep, and new soil-placement procedures to keep fill even on both sides of the arch.',
+    source: 'CHPRC-03365 §2, citing CAC-964 (Vitro Engineering Corporation, 1964)',
+  },
+  {
+    id: 't2-grade', register: 'documented',
+    pos: [13.9, 0, 100], face: Math.PI / 2,
+    title: 'The grade',
+    body: 'The permit’s engineering text says the Tunnel 2 tracks are on a 1/10 of 1 percent downgrade to the south, and its elevation drawing is labeled “Grade 0.1%”; the inventory table header in the same permit says one percent. This simulation follows the engineering text, a half-meter drop over the full length. Tunnel 1’s grade is 1.0 percent in every source.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.2 and Part A drawing; HNF-SD-EN-WAP-007 Rev. 4 Table 1 header',
+  },
+  {
+    id: 't2-empty-north', register: 'documented',
+    pos: [13.9, 0, 150], face: Math.PI / 2,
+    title: 'Room for forty cars',
+    body: 'The storage area was designed for 40 railcars of 12.8 meters; the inventory header says 38 to 40. Twenty-eight were placed between December 12, 1967 and June 19, 1996, filling the southern 356 meters. The roughly 156 meters you have just walked were never used. Along the crown, 17 tunnel ports on 29.3-meter centers are each closed by a 7.6-centimeter bar plug secured with chain and padlock; in October 2018 through April 2019 grout was pumped through these openings until the tunnel was full.',
+    source: 'DOE/RL-90-24 Rev. 4 §2.1.2 and Part A; HNF-SD-EN-WAP-007 Rev. 4 Table 1; DOE EM 2018-10-09; DOE press release 2019-04-29',
+  },
+  {
+    id: 't2-hazards', register: 'documented',
+    pos: [13.9, 0, 300], face: Math.PI / 2,
+    title: 'What is on the cars',
+    body: 'The equipment is heavily contaminated with cesium-137 and strontium-90, with plutonium and americium-241. The permit lists the dangerous constituents: elemental mercury in the dissolver thermowells (the only free liquid), silver nitrate on the packing of the silver reactors, chromium in a failed concentrator and the 324 Building containers, cadmium used as shielding and neutron moderator, and lead jumper counterweights encased in steel. Tunnel 2’s total inventory was assessed at about 509,000 curies, nearly 25 times Tunnel 1’s.',
+    source: 'DOE/RL-90-24 Rev. 4 Appendix 3A §§2.1.1–2.1.5; CRESP Appendix F.6 citing CP-14977 Rev. 7',
+  },
+  {
+    id: 't2-dissolvers', register: 'documented',
+    pos: [13.9, 0, 486], face: Math.PI / 2,
+    title: 'The dissolvers',
+    body: 'Three dissolvers rest on inclined cradles in Tunnel 2 (positions 7, 9 and 11). Each is a 304L stainless steel vessel about 2.7 meters in diameter and 7.3 meters tall, weighing about 26,300 kilograms, with a 1-centimeter shell. They declad and dissolved irradiated reactor fuel. Depending on the unit, 19.1 or 45.4 kilograms of mercury were poured into each of two thick-walled thermowells and plugged. Later dissolvers were annular for criticality safety and sat over cadmium-lined moderators.',
+    source: 'DOE/RL-90-24 Rev. 4 Appendix 3A §§2.1.2, 2.1.5',
+  },
+  {
+    id: 't2-silver-reactors', register: 'documented',
+    pos: [13.9, 0, 512], face: Math.PI / 2,
+    title: 'The silver reactors',
+    body: 'Two silver reactors are stored in Tunnel 2 (positions 5 and 15). Each vessel is about 1.4 meters in diameter and 4.1 meters tall in 1-centimeter 304L stainless steel, holding two 1.2-meter beds of unglazed ceramic saddles coated with 113.4 kilograms of silver nitrate. They removed radioactive iodine from the dissolver off-gas. The reactor placed on May 13, 1988 is estimated to hold 7.4 curies of iodine-129; almost all of the iodine-129 inventory of both tunnels is here in Tunnel 2.',
+    source: 'DOE/RL-90-24 Rev. 4 Appendix 3A §2.1.3; CP-60195; PNNL-11800 Addendum 1 §3.3.2.1.2',
+  },
+  {
+    id: 't2-south', register: 'documented',
+    pos: [13.9, 0, 566], face: Math.PI / 2,
+    title: 'The south end of Tunnel 2',
+    body: 'A railcar bumper sits 2.4 meters from the end of the track; the first car, placed December 12, 1967, abuts it. The south-end ventilation shaft, 1.5 meters square, carried a single-stage HEPA filter, a 153-cubic-meter-per-minute fan normally dampered to about 100, and a 6.1-meter stack. At deactivation a blank was installed downstream of the filter and the shaft was capped and sealed with the fans abandoned in place. Video inspections in 2018 found the steel supports at this end of the tunnel severely corroded; in 1999 that damage lay years ahead.',
+    source: 'DOE/RL-90-24 Rev. 4 §§2.1.2, 4.1.6; CRESP Appendix F.6; Harkema et al. 2022',
+  },
+];

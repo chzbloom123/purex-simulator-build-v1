@@ -1,0 +1,927 @@
+{
+ "generated": "2026-09-07",
+ "registers": [
+  "documented"
+ ],
+ "note": "v1 ships the documented register only. Every entry traces to a line in canon.md.",
+ "placards": [
+  {
+   "id": "rr-north-limit",
+   "register": "documented",
+   "pos": [
+    0,
+    0,
+    -78.6
+   ],
+   "face": 3.141592653589793,
+   "title": "The PUREX railroad tunnel",
+   "body": "You are standing in the below-grade railroad tunnel that served the PUREX Plant (202-A). It runs north–south on the west side of the storage basin at the east end of the canyon and connects to a railroad spur outside the building. The two storage tunnels branch off it and extend southward from the east end of the plant; each is isolated from the railroad tunnel by a water-fillable shielding door. North of this point the tunnel continues to the plant, outside the bounds of this simulation.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1; PNL-10705 (WHC-SP-0479 §2.3.7); Harkema et al. 2022"
+  },
+  {
+   "id": "rr-junction",
+   "register": "documented",
+   "pos": [
+    3,
+    0,
+    -32
+   ],
+   "face": -1.5707963267948966,
+   "title": "Where the tunnels branch",
+   "body": "Tunnel 1 (218-E-14) is a straight extension southward from the plant. Tunnel 2 (218-E-15), added in 1964, angles off eastward from the railroad tunnel about 150 feet south of the 202-A Building, then straightens to run parallel to Tunnel 1. Center-line to center-line the two tunnels are about 18.3 meters apart; Tunnel 2’s door is about 57.9 meters south and 18.3 meters east of Tunnel 1’s. The 1964 spur was cast in place.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.2; PNL-10705; CHPRC-03365 §2"
+  },
+  {
+   "id": "rr-locomotive",
+   "register": "documented",
+   "pos": [
+    -3,
+    0,
+    -18
+   ],
+   "face": 1.5707963267948966,
+   "title": "How the cars went in",
+   "body": "A remotely controlled, battery-powered locomotive normally moved railcars into and out of the storage tunnels. Before a move, crews charged the locomotive and radio-transmitter batteries, fitted a plastic shroud over the locomotive to ease decontamination, and installed an anti-coupling device on its south coupler. The door was raised, the loaded car was surveyed by health physics, pushed to its storage position, uncoupled, and the water-fillable door was closed behind it. Because each tunnel is a single dead-end track, cars can be removed only in reverse order: last in, first out.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1, 4.1.1.1, 4.1.2.4"
+  },
+  {
+   "id": "t1-door",
+   "register": "documented",
+   "pos": [
+    -3,
+    0,
+    -6.2
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1 water-fillable shielding door",
+   "body": "The door is 7.5 meters high, 6.6 meters wide and 2.1 meters thick, built of 1.3-centimeter steel plate. It is hollow so it can be filled with water as a radiation shield when down. Electric hoists raise it into the reinforced-concrete structure above; the pumps and valves are in a room northwest of the door and the controls were in the PUREX Plant. Beneath the door is a sump with a 15.2-centimeter drain to the railroad-tunnel sump. After the eighth car was placed in January 1965 the door was closed, filled with water, and deactivated electrically. It was drained during the 1995–97 facility transition and the drain was sealed. It has not been raised since.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.1; CRESP Appendix F.6"
+  },
+  {
+   "id": "t1-interior",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    2.2
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1 (218-E-14) — the timber tunnel",
+   "body": "Approximately 5.8 meters (19 feet) wide, 6.7 meters (22 feet) high and 109 meters (358 feet) long, with storage space for eight railcars. Walls and ceiling are 12-inch by 14-inch creosote pressure-treated No. 1 Douglas fir timbers set side by side with the 12-inch face exposed. The wall timbers rest on reinforced-concrete footings 0.9 meter wide with a 9-inch curb. The floor is railroad track on a gravel bed, ballasted to the top of the ties, flat all the way to the walls, on a 1.0 percent downgrade to the south so the cars stay put. Built 1954–56 as the “Disposal Facility for Failed Equipment”; the first car went in in June 1960.",
+   "source": "DOE/RL-90-24 Rev. 4 Part A and §2.1.1; CRESP Appendix F.6; CHPRC-03585"
+  },
+  {
+   "id": "t1-no-entry",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    9
+   ],
+   "face": 1.5707963267948966,
+   "title": "No one has stood here",
+   "body": "“Periodic inspection of the equipment stored in the PUREX Storage Tunnels is not feasible because of radiation levels in excess of 5 roentgen per hour.” There are no electrical utilities, water lines, drains, fire detection or suppression systems, radiation monitoring, or communication systems inside either tunnel. Air sampling found oxygen at about 21 percent and carbon dioxide at about 0.3 percent, with no combustible gases; the temperature in Tunnel 1 held at 15.6 °C. Only external inspections were performed. The headlamp you carry is a conceit of this simulation.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1, 2.1.1, 6.2 (citing Rambosek and Foster 1972)"
+  },
+  {
+   "id": "t1-concrete-wall",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    16
+   ],
+   "face": 1.5707963267948966,
+   "title": "The concrete east wall",
+   "body": "The first 30.5 meters (about 100 feet) of the east wall are 0.9-meter-thick reinforced concrete rather than timber — the section adjacent to Tunnel 2’s spur. Outside, the timber was wrapped in 90-pound mineral-surface roofing material, nailed with 10-centimeter overlaps, before 2.4 meters (8 feet) of earth fill were placed over the tunnel for weather protection and shielding.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1.1, 6.4.2; CRESP Appendix F.6"
+  },
+  {
+   "id": "t1-timber-condition",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    46
+   ],
+   "face": 1.5707963267948966,
+   "title": "The timbers, as evaluated",
+   "body": "Between 1962 and 1980 nine pipe risers were installed through the roof; seven were used to sample the ceiling timbers and two to sample air and temperature. A 1980 survey found the beams within standards for present-day wood. A 1991 independent re-evaluation by Los Alamos Technical Associates found minimal decay or insect damage but ongoing degradation from gamma radiation, estimating the timbers would retain about 60 percent of their original strength in 2001, and recommended re-evaluation if the tunnel had not been emptied by then. That re-evaluation did not happen. On May 9, 2017, a section of the roof timbers failed near the junction with Tunnel 2, opening a hole about 19 by 17 feet; no release was detected, and the tunnel was filled with 4,434 cubic yards of grout that autumn.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.1; CRESP Appendix F.6; Ecology AO Docket #14156; CHPRC-03585; GAO-20-161"
+  },
+  {
+   "id": "t1-bumper",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    104.5
+   ],
+   "face": 1.5707963267948966,
+   "title": "The south end of Tunnel 1",
+   "body": "A railcar bumper 2.4 meters from the south end of the track stops the first car. Position 1 is the car that abuts the bumper; the count runs north from here. Above the south end a 1.5-by-1.5-meter reinforced-concrete ventilation shaft rose 0.3 meter above grade to a single-stage HEPA filter, a 283-cubic-meter-per-minute exhaust fan and a 6.1-meter stack. When the tunnel was sealed in January 1965 the fan was de-energized, blanks were installed on both sides of the fan and filter, and the stack was removed. The combined volume of equipment on the eight cars is about 596 cubic meters; the tabulated curies at placement sum to 87,800, decayed to roughly 21,200 by 2003.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1, 2.1.1, 4.1.6.1; CRESP Appendix F.6"
+  },
+  {
+   "id": "t2-door",
+   "register": "documented",
+   "pos": [
+    15.3,
+    0,
+    51.6
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2 water-fillable shielding door",
+   "body": "Essentially identical to the Tunnel 1 door: 7.5 meters high, 6.6 meters wide, 2.1 meters thick, hollow steel. Its controls are above the tunnel on the east exterior wall of the door enclosure. The permit records: “Presently, the door is empty and there are no plans to fill it.” With the door closed and the exhaust fan running, the tunnel was held at a slight negative pressure; make-up air infiltrated around the door and through the porosity of the structure and rail ballast. The door was sealed during the 1995–97 deactivation.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1.2, 4.1.4, 4.1.6.2; CRESP Appendix F.6"
+  },
+  {
+   "id": "t2-interior",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    60.5
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2 (218-E-15) — the Quonset arch",
+   "body": "Nominal inside dimensions 514.5 meters (1,688 feet) long, 7.9 meters high and 10.4 meters wide. Built in 1964 in the shape of a Quonset hut: transverse 6-inch steel ribs on a 17-foot-3-inch radius, 37·11/16 inches on center, carrying 3/16-inch stamped corrugated steel roof panels, with exterior reinforced-concrete arches on 15-foot-8¾-inch centers and grade beams 1.8 meters wide by 1.2 meters thick running the full length. Inside and out the steel is coated with a bituminous compound. Because of the arch and the door clearance, the usable storage envelope is the same 6.7 by 5.8 meters as Tunnel 1. Outboard of the 2.4-meter ties the earth floor rises at 1 vertical to 1½ horizontal to about 1.8 meters above the rail bed.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.2; CHPRC-03365 §2 and p.10; CRESP Appendix F.6"
+  },
+  {
+   "id": "t2-collapses-1964",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    75
+   ],
+   "face": 1.5707963267948966,
+   "title": "The wales, and why they are here",
+   "body": "The longitudinal steel beams hung beneath the ribs are a retrofit. During backfilling in 1964, portions of Tunnel 2 catastrophically collapsed on two separate occasions at different locations. The fixes, recorded in the March 17, 1964 inspection report CAC-964, were these interior steel wale beams, underhung from anchor bolts embedded in new exterior arched concrete rib girders 15 inches wide by 36 inches deep, and new soil-placement procedures to keep fill even on both sides of the arch.",
+   "source": "CHPRC-03365 §2, citing CAC-964 (Vitro Engineering Corporation, 1964)"
+  },
+  {
+   "id": "t2-grade",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    100
+   ],
+   "face": 1.5707963267948966,
+   "title": "The grade",
+   "body": "The permit’s engineering text says the Tunnel 2 tracks are on a 1/10 of 1 percent downgrade to the south, and its elevation drawing is labeled “Grade 0.1%”; the inventory table header in the same permit says one percent. This simulation follows the engineering text, a half-meter drop over the full length. Tunnel 1’s grade is 1.0 percent in every source.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.2 and Part A drawing; HNF-SD-EN-WAP-007 Rev. 4 Table 1 header"
+  },
+  {
+   "id": "t2-empty-north",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    150
+   ],
+   "face": 1.5707963267948966,
+   "title": "Room for forty cars",
+   "body": "The storage area was designed for 40 railcars of 12.8 meters; the inventory header says 38 to 40. Twenty-eight were placed between December 12, 1967 and June 19, 1996, filling the southern 356 meters. The roughly 156 meters you have just walked were never used. Along the crown, 17 tunnel ports on 29.3-meter centers are each closed by a 7.6-centimeter bar plug secured with chain and padlock; in October 2018 through April 2019 grout was pumped through these openings until the tunnel was full.",
+   "source": "DOE/RL-90-24 Rev. 4 §2.1.2 and Part A; HNF-SD-EN-WAP-007 Rev. 4 Table 1; DOE EM 2018-10-09; DOE press release 2019-04-29"
+  },
+  {
+   "id": "t2-hazards",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    300
+   ],
+   "face": 1.5707963267948966,
+   "title": "What is on the cars",
+   "body": "The equipment is heavily contaminated with cesium-137 and strontium-90, with plutonium and americium-241. The permit lists the dangerous constituents: elemental mercury in the dissolver thermowells (the only free liquid), silver nitrate on the packing of the silver reactors, chromium in a failed concentrator and the 324 Building containers, cadmium used as shielding and neutron moderator, and lead jumper counterweights encased in steel. Tunnel 2’s total inventory was assessed at about 509,000 curies, nearly 25 times Tunnel 1’s.",
+   "source": "DOE/RL-90-24 Rev. 4 Appendix 3A §§2.1.1–2.1.5; CRESP Appendix F.6 citing CP-14977 Rev. 7"
+  },
+  {
+   "id": "t2-dissolvers",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    486
+   ],
+   "face": 1.5707963267948966,
+   "title": "The dissolvers",
+   "body": "Three dissolvers rest on inclined cradles in Tunnel 2 (positions 7, 9 and 11). Each is a 304L stainless steel vessel about 2.7 meters in diameter and 7.3 meters tall, weighing about 26,300 kilograms, with a 1-centimeter shell. They declad and dissolved irradiated reactor fuel. Depending on the unit, 19.1 or 45.4 kilograms of mercury were poured into each of two thick-walled thermowells and plugged. Later dissolvers were annular for criticality safety and sat over cadmium-lined moderators.",
+   "source": "DOE/RL-90-24 Rev. 4 Appendix 3A §§2.1.2, 2.1.5"
+  },
+  {
+   "id": "t2-silver-reactors",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    512
+   ],
+   "face": 1.5707963267948966,
+   "title": "The silver reactors",
+   "body": "Two silver reactors are stored in Tunnel 2 (positions 5 and 15). Each vessel is about 1.4 meters in diameter and 4.1 meters tall in 1-centimeter 304L stainless steel, holding two 1.2-meter beds of unglazed ceramic saddles coated with 113.4 kilograms of silver nitrate. They removed radioactive iodine from the dissolver off-gas. The reactor placed on May 13, 1988 is estimated to hold 7.4 curies of iodine-129; almost all of the iodine-129 inventory of both tunnels is here in Tunnel 2.",
+   "source": "DOE/RL-90-24 Rev. 4 Appendix 3A §2.1.3; CP-60195; PNNL-11800 Addendum 1 §3.3.2.1.2"
+  },
+  {
+   "id": "t2-south",
+   "register": "documented",
+   "pos": [
+    13.9,
+    0,
+    566
+   ],
+   "face": 1.5707963267948966,
+   "title": "The south end of Tunnel 2",
+   "body": "A railcar bumper sits 2.4 meters from the end of the track; the first car, placed December 12, 1967, abuts it. The south-end ventilation shaft, 1.5 meters square, carried a single-stage HEPA filter, a 153-cubic-meter-per-minute fan normally dampered to about 100, and a 6.1-meter stack. At deactivation a blank was installed downstream of the filter and the shaft was capped and sealed with the fans abandoned in place. Video inspections in 2018 found the steel supports at this end of the tunnel severely corroded; in 1999 that damage lay years ahead.",
+   "source": "DOE/RL-90-24 Rev. 4 §§2.1.2, 4.1.6; CRESP Appendix F.6; Harkema et al. 2022"
+  },
+  {
+   "id": "car-1-1",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    95.1
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 1 — HA Column and misc. jumpers in box (car 1 of 2)",
+   "body": "HA COLUMN AND MISC JUMPERS IN BOX. PLACED IN TUNNEL #1 ON 6/60. HA 4,700 CU. FT., 400 CURIES, 5 rem/hr. @ 60′. JUMPRS 2,190 CU. FT., 2,000 CURIES, Pb – ~115 Kg. Table 1 sketch: Jumper box (\"JMP's\") on the north car; the HA column, inside BOX H2-58373, spans both cars.",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 1,
+    "placed": "6/60",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-2",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    82.3
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 2 — HA Column in box H2-58373 (car 2 of 2)",
+   "body": "The first load into Tunnel 1: a single failed separation column, approximately 12.5 meters long, boxed and carried across two railcars (PERMIT §2.1.1). The HA column made the primary separation of the highly radioactive feed into an organic product stream and a first-cycle aqueous waste stream carrying more than 99.9 percent of the fission products (HW-49483 A).",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 2,
+    "placed": "6/60",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-3",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    69.5
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 3 — E-F11 #1 (1WW waste) concentrator",
+   "body": "E-F11 #1 (1WW WASTE) CONCENTRATOR FAILED 7/24/60. PLACED IN TUNNEL #1 ON 7/29/60, 12.5 rem/hr. @ 100′, 1,900 CU. FT., 40,000 CURIES AFTER FIFTY-FIVE MONTHS SERVICE.",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 3,
+    "placed": "7/29/60",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-4",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    56.7
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 4 — G-E2 centrifuge, jumper box, two tube bundles",
+   "body": "G-E2 CENTRIFUGE. MISC JUMPERS IN BOX AND TWO TUBE BUNDLES. PLACED IN TUNNEL #1 ON 12/24/60 (FUG SER# 762). 2,465 CU. FT., 3,000 CURIES, Pb – ~115 Kg., 1.5 rem/hr. @ 150′. Table 1 sketch: Three boxes in a row: \"JMP's\", \"G E2\" (taller), \"2 TB's\".",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 4,
+    "placed": "12/24/60",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-5",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    43.900000000000006
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 5 — E-H4 (3WB) concentrator",
+   "body": "E-H4 (3WB) CONCENTRATOR FAILED 1/4/61. PLACED IN TUNNEL #1 ON 1/4/61, 150 mrem/hr. @ 50′, 2,336 CU. FT., 1,000 CURIES. AFTER FIVE YEARS SERVICE.",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 5,
+    "placed": "1/4/61",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-6",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    31.1
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 6 — E-F6 (2WW waste) original concentrator",
+   "body": "E-F6 (2WW WASTE) ORIGINAL CONCENTRATOR FAILED 4/21/61. PLACED IN TUNNEL #1 ON 4/21/61, 5 rem/hr. @ 20′, 2,336 CU. FT., 700 CURIES. AFTER FIVE YEARS FOUR MONTHS SERVICE.",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 6,
+    "placed": "4/21/61",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-7",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    18.3
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 7 — E-F11 (1WW waste) #2 concentrator",
+   "body": "E-F11 (1WW WASTE) #2 CONCENTRATOR FAILED 2/1/62. PLACED IN TUNNEL #1 ON 2/8/62, 25 rem/hr. @ 150′, 2,336 CU. FT., 40,000 CURIES. AFTER EIGHTEEN MONTHS SERVICE.",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 7,
+    "placed": "2/8/62",
+    "carId": null
+   }
+  },
+  {
+   "id": "car-1-8",
+   "register": "documented",
+   "pos": [
+    -2.75,
+    0,
+    5.500000000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 1, position 8 — E-F6 (2WW waste) #3 spare concentrator — last car into Tunnel 1",
+   "body": "E-F6 (2WW WASTE) #3 SPARE CONCENTRATOR FAILED 5/23/64. PLACED IN TUNNEL #1 ON 1/22/65 FLAT CAR 3621. 2,400 CU. FT., 700 CURIES, 5 rem/hr. @ 20′. \"TUNNEL IS AT ITS CAPACITY AS OF 1/22/65.\"",
+   "source": "WAP-TABLE1 sheet 1 (DOE/RL-90-24 Rev. 4, PDF p.149)",
+   "car": {
+    "tunnel": 1,
+    "pos": 8,
+    "placed": "1/22/65",
+    "carId": "FLAT CAR 3621"
+   }
+  },
+  {
+   "id": "car-2-1",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    558.4000000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 1 — E-F6 (2WW waste) concentrator, TK F15-2, tube bundle, agitator motors — first car into Tunnel 2",
+   "body": "E-F6 # (2WW WASTE) CONCENTRATOR, TK F 15-2, ONE TUBE BUNDLE AND AGITATOR MOTORS. PLACED IN TUNNEL ON 12/12/67 ON CAR 61439. 2,400 CU. FT., 700 CURIES, 1.3 rem/hr. @ 100′. (The unit number after \"E-F6 #\" is blank on the page.)",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 1,
+    "placed": "12/12/67",
+    "carId": "CAR 61439"
+   }
+  },
+  {
+   "id": "car-2-2",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    545.6000000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 2 — E-F6 #5 (E-H4 3WB) concentrator, two tube bundles",
+   "body": "E-F6 #5 (E-H4 3WB) CONCENTRATOR, TWO TUBE BUNDLES. PLACED IN TUNNEL ON 3/26/69 ON CAR MILW 60883. 2,400 CU. FT., 500 CURIES, 800 mrem/hr. @ 2′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 2,
+    "placed": "3/26/69",
+    "carId": "MILW 60883"
+   }
+  },
+  {
+   "id": "car-2-3",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    532.8000000000002
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 3 — E-F6 #6 (2WW waste) concentrator, two tube bundles",
+   "body": "E-F6 #6 (2WW WASTE) CONCENTRATOR, TWO TUBE BUNDLES FAILED. PLACED IN TUNNEL ON 3/19/70 ON CAR 3612. 2,400 CU. FT., 700 CURIES, 500 rem/hr. @ 2′ (dose rate as printed).",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 3,
+    "placed": "3/19/70",
+    "carId": "CAR 3612"
+   }
+  },
+  {
+   "id": "car-2-4",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    520.0000000000002
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 4 — L Cell package in a sealed steel box (H2-66012)",
+   "body": "L CELL PACKAGE IN A SEALED STEEL BOX (H2-66012). PLACED IN TUNNEL ON 12/30/70 ON CAR MILW 60033. 2,400 CU. FT., 500 GRMS Pu, 200 mrem/hr. @ CONTACT.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 4,
+    "placed": "12/30/70",
+    "carId": "MILW 60033"
+   }
+  },
+  {
+   "id": "car-2-5",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    507.20000000000016
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 5 — F2 silver reactor, F6 demister, vessel vent line, catwalk and guard rails",
+   "body": "F2 SILVER REACTOR, F6 DEMISTER, VESSEL VENT LINE STEEL CATWALK AND GUARD RAILS. PLACED IN TUNNEL ON 2/26/71 ON GONDOLA CAR 4610. 2,400 CU. FT., 20 CURIES, Ag – ~625 Kg, 2 rem/hr. @ CONTACT. Table 1 sketch: A box, a tall narrow upright (the reactor), and low items in the gondola.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 5,
+    "placed": "2/26/71",
+    "carId": "GONDOLA CAR 4610"
+   }
+  },
+  {
+   "id": "car-2-6",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    494.40000000000015
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 6 — Modified A3-1 tower, scrubber, lid and vapor line",
+   "body": "MODIFIED A3-1 TOWER, SCRUBBER, LID AND VAPOR LINE. PLACED IN TUNNEL ON 12/12/71 ON GONDOLA CAR 4611. 2,400 CU. FT., 10 CURIES, 1 rem/hr. @ CONTACT.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 6,
+    "placed": "12/12/71",
+    "carId": "GONDOLA CAR 4611"
+   }
+  },
+  {
+   "id": "car-2-7",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    484.34320000000014
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 7 — A3 dissolver",
+   "body": "A3 DISSOLVER. PLACED IN TUNNEL ON 12/22/71 ON NINE FT. SHORTENED CAR B58. 2,400 CU. FT., 50 CURIES, Hg – ~45 Kg, 5 rem/hr. @ 5′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 7,
+    "placed": "12/22/71",
+    "carId": "CAR B58 (shortened nine feet)"
+   }
+  },
+  {
+   "id": "car-2-8",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    471.5432000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 8 — A1W1 fuel ends in steel liner box; NPR fuel handling equipment",
+   "body": "A1W1 FUEL ENDS IN STEEL LINER BOX AND NPR FUEL HANDLING EQUIPT. USED WITH THE SUSPECTED CANISTERS, ON CAR 19808 PLACED IN TUNNEL ON 8/29/72. 800 CU. FT., 17,500 CURIES, 10 rem/hr. @ 150′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 8,
+    "placed": "8/29/72",
+    "carId": "CAR 19808"
+   }
+  },
+  {
+   "id": "car-2-9",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    458.7432000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 9 — C3 dissolver",
+   "body": "C3 DISSOLVER. PLACED IN TUNNEL ON 9/30/72 ON CAR 19811. 1590 CU. FT., 50 CURIES, Hg – ~45 Kg., 5 rem/hr. @ 5′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 9,
+    "placed": "9/30/72",
+    "carId": "CAR 19811"
+   }
+  },
+  {
+   "id": "car-2-10",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    445.9432000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 10 — E-H4 (3WB) concentrator, #61 tube bundle, prototype cooling coil, F-F1 filter tank",
+   "body": "E-H4 (3WB) CONCENTRATOR, #61 TUBE BUNDLE, PROTOTYPE COOLING COIL AND A F-F1 FILTER TANK. PLACED IN TUNNEL 8/30/83 ON CAR CDX-1. 2,400 CU. FT., 500 CURIES, 800 mrem/hr. @ 2′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 10,
+    "placed": "8/30/83",
+    "carId": "CAR CDX-1"
+   }
+  },
+  {
+   "id": "car-2-11",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    433.1432000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 11 — A3 dissolver (vessel #10) and heater vessel #6",
+   "body": "A3 DISSOLVER (VESSEL #10 AND HEATER VESSEL #6). PLACED IN TUNNEL ON 1/18/86 ON CAR 3613. 3,960 CU. FT., 0.81 CURIES, Hg – ~40 Kg., Cd – ~43 Kg., 3 mrem/hr. @ 3′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 11,
+    "placed": "1/18/86",
+    "carId": "CAR 3613"
+   }
+  },
+  {
+   "id": "car-2-12",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    420.3432000000001
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 12 — White box (H2-58456): eight tube bundles, pulser #5, old heater, dissolver lid, dumping trunnions",
+   "body": "WHITE BOX (H2-58456) CONTAINING EIGHT TUBE BUNDLES #S 57, 60, 62, 64, 67, 68, 74, AND 76 PULSER #5 AND OLD HEATER DISS LID OLD STYLE DUMPING TRUNNIONS (9). PLACED IN TUNNEL ON 1/20/86 ON CAR 3611. 5,438 CU. FT., 540 CURIES, 2 rem/hr. @ 3′.",
+   "source": "WAP-TABLE1 sheet 2 (DOE/RL-90-24 Rev. 4, PDF p.150)",
+   "car": {
+    "tunnel": 2,
+    "pos": 12,
+    "placed": "1/20/86",
+    "carId": "CAR 3611"
+   }
+  },
+  {
+   "id": "car-2-13",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    407.54320000000007
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 13 — J5 tank (vessel #30), F1 condenser (vessel #13), F12-B cell block, four-way dumper, dissolver yoke",
+   "body": "J5 TANK (VESSEL #30). F1 COND (VESSEL #13) AND F12-B CELL BLK. OLD FOUR-WAY DUMPER. DISS YOKE AND FLANGE PLATE, 3 rem/hr. @ 1′. PLACED IN TUNNEL ON 1/21/86 ON CAR 19806. 2,500 CU. FT., 90 CURIES.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 13,
+    "placed": "1/21/86",
+    "carId": "CAR 19806"
+   }
+  },
+  {
+   "id": "car-2-14",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    394.74320000000006
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 14 — L-1 pulser, column cartridges, pumps, agitators, tube bundles, yokes — 33,740 curies",
+   "body": "L-1 PULSER, 2-COLUMN CARTRIDGES, 1-JUMPER CUTTER, 3-JUMPER ALIGNMENT TOOLS, 9-EXTERIOR DUMPING TRUNNIONS, 10-PUMPS, 3-AGITATORS, 4-TUBE BUNDLES, 2-VENT JUMPERS AND 7-YOKES. PLACED IN TUNNEL ON 11/18/87 ON CAR PX-10 (10A-19380) & RACK H2-96629. 50 TONS, 3,600 CU. FT., 33,740 CURIES (REF: LETTER 12110-88-074), Pb – ~2540 Kg., 5 rem/hr. @ 15′. Table 1 sketch: A box at the north end and a long rack of many upright items.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 14,
+    "placed": "11/18/87",
+    "carId": "CAR PX-10 (10A-19380) & RACK H2-96629"
+   }
+  },
+  {
+   "id": "car-2-15",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    381.94320000000005
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 15 — Silver reactor on its cradle, E-F2 steam heater, storage liner full of cut-up jumpers",
+   "body": "SILVER REACTOR, E-F2 STEAM HEATER AND STORAGE LINER (H2-65095) FULL OF CUT UP JUMPERS. PLACED IN TUNNEL ON 5/13/88 ON CAR PX-9 (10A-19809) & S/R CRADLE SK-GLR-11-2-87. 20 TONS, 2,775 CU. FT., 240 CURIES (REF: LETTER 12110-88-074), Cd – ~13 Kg., Ag – ~115 Kg., Pb – ~230 Kg., 20 mrem/hr. @ 20′. This silver reactor is estimated to hold 7.4 Ci of iodine-129 (CP-60195). Table 1 sketch: Two cross-braced cradle boxes and a lower liner.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 15,
+    "placed": "5/13/88",
+    "carId": "CAR PX-9 (10A-19809) & S/R CRADLE SK-GLR-11-2-87"
+   }
+  },
+  {
+   "id": "car-2-16",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    369.14320000000004
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 16 — E-J8-1 unitized concentrator vessel #1",
+   "body": "E-J8-1 UNITIZED CONCENTRATOR VESS #1 H2-52477, FAILED 3/11/89. PLACED ON STORAGE CAR H2-99608, PX-6 (10A-19028) AND INTO #2 TUNNEL 4/6/89 GRAVEYARDS. EST. 42 TONS, 6,000 CU. FT. 1.5 CURIES (REF: LETTER 12113-89-027), 0.5 mrem/hr. @ 10′.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 16,
+    "placed": "4/6/89",
+    "carId": "STORAGE CAR H2-99608, PX-6 (10A-19028)"
+   }
+  },
+  {
+   "id": "car-2-17",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    356.3432
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 17 — North and south storage liners: pumps, agitator, yoke, cut-up jumpers",
+   "body": "NORTH STORAGE LINER H2-65095 CONTAINING SIX PUMPS, ONE AGITATOR AND CUT UP JUMPER (14 TONS). SOUTH STORAGE LINER H2-65095 CONTAINING ONE PUMP, ONE #15 YOKE AND CUT UP JUMPERS (11.5 TONS). PLACED ON STORAGE CAR PX-19 (10A-19030) AND INTO #2 TUNNEL 8/5/89 DAYS. EST 25.5 TONS, 2,574 CU. FT. 3.0 CURIES (REF: LETTER 12113-89-051), 80 mrem/hr. @ 1′.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 17,
+    "placed": "8/5/89",
+    "carId": "STORAGE CAR PX-19 (10A-19030)"
+   }
+  },
+  {
+   "id": "car-2-18",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    343.5432
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 18 — T-F5 acid absorber",
+   "body": "T-F5 ACID ABSORBER, ID#1-T-F5/F-168713, H2-52535 AND H2-52487/488. PLACED ON STORAGE CAR PX-2 AND INTO #2 TUNNEL 4/8/94. EST 22 TONS, 835 CU. FT., 185 CURIES, 90 mrem/hr. @ CONTACT. Table 1 sketch: Two boxes.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 18,
+    "placed": "4/8/94",
+    "carId": "STORAGE CAR PX-2"
+   }
+  },
+  {
+   "id": "car-2-19",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    330.7432
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 19 — Four metal liner storage boxes: failed jumpers and obsolete canyon equipment",
+   "body": "FOUR METAL LINER STORAGE BOXES H-2-65095-3/H-2-100187-0 CONTAINING FAILED JUMPERS AND MISCELLANEOUS OBSOLETE CANYON EQUIPMENT ITEMS. PLACED ON STORAGE CAR PX-23 AND INTO #2 TUNNEL 9/16/94. EST 60 TONS, 4032 CU. FT., 927 CURIES, 30 mrem/hr. @ 2′.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 19,
+    "placed": "9/16/94",
+    "carId": "STORAGE CAR PX-23"
+   }
+  },
+  {
+   "id": "car-2-20",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    317.9432
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 20 — E-H4-1 unitized concentrator (chromium-bearing)",
+   "body": "E-H4-1 UNITIZED CONCENTRATOR (H-2-52477/56213)/(E-H4-1). PLACED IN TUNNEL ON 1/27/95 ON CAR PX-28. EST 40 TONS, 5,760 CU. FT., 3,070 CURIES, Cr – ~8 Kg., 1000 mrem/hr. @ 5′.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 20,
+    "placed": "1/27/95",
+    "carId": "CAR PX-28"
+   }
+  },
+  {
+   "id": "car-2-21",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    305.1432
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 21 — Tank E-5, lead storage box, H4 concentrator tower, hot shop cover plate, wash capsule, charging insert, lifting yokes",
+   "body": "TANK E-5 (H-2-52453)/(F-166955), LEAD STORAGE BOX ASSEMBLY (H-2-131629)/(H-2-131629-1), H4 CONCENTRATOR TOWER (H-2-58102)/(F-223017-CBT-4), HOT SHOP COVER PLATE (H-2-52222)/(\"Q\"), TUBE BUNDLE WASH CAPSULE (H-2-58647), DISSOLVER CHARGING INSERT (H-2-75875)/(H-2-75875-1), LIFTING YOKE #7A (H-2-96837), LIFTING YOKE #9 (H-2-52458). PLACED IN TUNNEL ON 2/8/95 ON CAR PX-3609. EST 44 TONS, 3,457 CU. FT., 26,000 CURIES, Pb – ~1930 Kg., 1000 mrem/hr. @ 4′. Table 1 sketch: Many small items of varied height along the car.",
+   "source": "WAP-TABLE1 sheet 3 (DOE/RL-90-24 Rev. 4, PDF p.151)",
+   "car": {
+    "tunnel": 2,
+    "pos": 21,
+    "placed": "2/8/95",
+    "carId": "CAR PX-3609"
+   }
+  },
+  {
+   "id": "car-2-22",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    292.34319999999997
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 22 — Metal liner box, F7 neutron monitor, lead storage box, scrap hopper, canister capping station, test canister",
+   "body": "METAL LINER BOX (H-2-65095) CONTAINING JUMPERS AND FAILED/OBSOLETE CANYON EQUIPMENT, F7 NEUTRON MONITOR (H-2-75825), LEAD STORAGE BOX (H-2-131629) CONTAINING JUMPER COUNTERWEIGHTS AND MISCELLANEOUS LEAD ITEMS, SCRAP HOPPER (H-2-57347) CONTAINING MISCELLANEOUS CANYON EQUIPMENT, CANISTER CAPPING STATION (H-2-821831), TEST CANISTER CONTAINING VARIOUS LENGTHS OF CARBON STEEL PIPE. PLACED IN TUNNEL 3-11-96 ON CAR #3616. ESTIMATED WEIGHT 22 TONS, 1,712 CU. FT., 15 CURIES, Pb – ~3,232 Kg., Cd – ~2 Kg., 100 mrem/hr. @ 1′. Table 1 sketch: A small round hopper, boxes, and a taller box toward the south.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 22,
+    "placed": "3/11/96",
+    "carId": "CAR #3616"
+   }
+  },
+  {
+   "id": "car-2-23",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    279.54319999999996
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 23 — Two burial boxes (H-2-100187): jumpers and obsolete canyon equipment; lifting yoke",
+   "body": "TWO BURIAL BOXES (H-2-100187) CONTAINING JUMPERS AND FAILED/OBSOLETE CANYON EQUIPMENT, LIFTING YOKE (H-2-99652). PLACED IN TUNNEL 3-11-96 ON CAR #PX-31. ESTIMATED WEIGHT 21 TONS, 2,116 CU. FT., 2 CURIES, 10 mrem/hr. @ 1′. Table 1 sketch: A tall upright (the yoke) beside a long box.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 23,
+    "placed": "3/11/96",
+    "carId": "CAR #PX-31"
+   }
+  },
+  {
+   "id": "car-2-24",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    266.74319999999994
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 24 — Concrete burial box (H-1-44980): 8 containers of 324 Building B-Cell waste",
+   "body": "CONCRETE BURIAL BOX (H-1-44980) STORING 8 CONTAINERS OF 324 BUILDING, B-CELL WASTE. FOR ADDITIONAL DETAILS, SEE PUREX WORK PLAN WP-P-95-60. PLACED IN TUNNEL ON CAR #PX-29, ON APRIL 26, 1996. ESTIMATED WEIGHT 36 TONS, 1,890 CU. FT., < 244,000 CURIES, ~15 mrem/hr. @ 150′. Pb – ~1,802 kg., Cd – ~10.5 kg., absorbed oil – ~8.5 kg., Cr – ~1 kg., Ba – ~3 kg, ~24 g Pu. Table 1 sketch: A three-section box with lifting lugs and a sloped brace at the north end.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 24,
+    "placed": "4/26/96",
+    "carId": "CAR #PX-29"
+   }
+  },
+  {
+   "id": "car-2-25",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    253.94319999999993
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 25 — Concrete burial box (H-1-44980): 9 containers of 324 and 325 Building waste",
+   "body": "CONCRETE BURIAL BOX (H-1-44980) STORING 9 CONTAINERS OF 324 AND 325 BUILDING WASTE. FOR ADDITIONAL DETAILS, SEE PUREX WORK PLAN WP-P-96-015. PLACED IN TUNNEL ON CAR #10A-3619, ON JUNE 12, 1996. ESTIMATED WEIGHT 46.5 TONS, 1,890 CU. FT., < 1.75 M CURIES, ~200 mrem/hr. @ 150′. Ba – ~4 g., Cd – <1 g., Cr – ~2 g., Pb – <1 g., ~43 g Pu.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 25,
+    "placed": "6/12/96",
+    "carId": "CAR #10A-3619"
+   }
+  },
+  {
+   "id": "car-2-26",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    241.14319999999992
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 26 — 20,000-gallon liquid waste tank car, empty per RCRA",
+   "body": "20,000 GALLON LIQUID WASTE TANK CAR HO-10H-18580, EMPTY PER RCRA, PLACED IN TUNNEL ON JUNE 19, 1996, APPROXIMATELY 30 TONS, 5 CURIES, 100 mrem/hr. @ 3′, ~53 g Pu.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 26,
+    "placed": "6/19/96",
+    "carId": "HO-10H-18580"
+   }
+  },
+  {
+   "id": "car-2-27",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    228.3431999999999
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 27 — 20,000-gallon liquid waste tank car, empty per RCRA",
+   "body": "20,000 GALLON LIQUID WASTE TANK CAR HO-10H-18579, EMPTY PER RCRA, PLACED IN TUNNEL ON JUNE 19, 1996, APPROXIMATELY 30 TONS, 9 CURIES, 300 mrem/hr. @ 3′, ~131 g Pu.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 27,
+    "placed": "6/19/96",
+    "carId": "HO-10H-18579"
+   }
+  },
+  {
+   "id": "car-2-28",
+   "register": "documented",
+   "pos": [
+    14.700000000000001,
+    0,
+    215.5431999999999
+   ],
+   "face": 1.5707963267948966,
+   "title": "Tunnel 2, position 28 — 20,000-gallon liquid waste tank car, empty per RCRA — the last car into either tunnel",
+   "body": "20,000 GALLON LIQUID WASTE TANK CAR HO-10H-18582, EMPTY PER RCRA, PLACED IN TUNNEL ON JUNE 19, 1996, APPROXIMATELY 30 TONS, 23 CURIES, 650 mrem/hr. @ 3′, ~11 g Pu.",
+   "source": "WAP-TABLE1 sheet 4 (DOE/RL-90-24 Rev. 4, PDF p.152)",
+   "car": {
+    "tunnel": 2,
+    "pos": 28,
+    "placed": "6/19/96",
+    "carId": "HO-10H-18582"
+   }
+  }
+ ]
+}

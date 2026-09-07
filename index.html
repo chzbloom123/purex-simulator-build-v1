@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>PUREX Storage Tunnels — a walk, circa 1999</title>
+  <meta name="description" content="A first-person historical simulation of the Hanford PUREX Storage Tunnels as they stood circa 1999, built from the public record. The real tunnels are permanently grouted." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23141210%27/%3E%3Cpath d=%27M4 26V14a12 12 0 0 1 24 0v12%27 fill=%27none%27 stroke=%27%23d9d2c2%27 stroke-width=%273%27/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="c" tabindex="0"></canvas>
+
+  <div id="entry">
+    <div class="card">
+      <h1>PUREX Storage Tunnels</h1>
+      <p class="sub">218-E-14 “Tunnel 1” and 218-E-15 “Tunnel 2” · Hanford Site, 200 East Area · as they stood circa 1999</p>
+      <p>This is a <strong>historical simulation</strong> built from public sources: the RCRA permit application, DOE engineering evaluations, construction-era photographs, and as-built drawing excerpts. It depicts the tunnels as they stood around 1999, loaded to their final contents, sealed, and standing.</p>
+      <p>No person ever stood inside these tunnels once the railcars were in. Interior radiation exceeded 5 roentgen per hour from the first car onward, and no photograph of the loaded interiors exists. In 2017 and 2019 both tunnels were filled solid with engineered grout. The walk was impossible while they stood and is impossible now.</p>
+      <p>Where the record is silent, this simulation infers period-plausible detail. <strong>Inferred details are labeled inferred.</strong> Placards quote their sources. The visitor’s headlamp, the ability to pass the sealed doors, and the inspection view are presentation conceits, not history.</p>
+      <p class="warn">This is not site information and is not a substitute for any Hanford document, procedure, or training. Photo credits: U.S. Department of Energy.</p>
+      <div class="controls">
+        <div><b>Move</b> W A S D / arrows · <b>Look</b> mouse · <b>Run</b> Shift · <b>Step through a sealed door</b> E · <b>Inspection view</b> F</div>
+        <div class="touch-only"><b>Touch:</b> left pad to move · drag to look</div>
+      </div>
+      <button id="enter">Enter the railroad tunnel</button>
+    </div>
+  </div>
+
+  <div id="hud" hidden>
+    <div id="hud-loc"></div>
+    <div id="hud-mode"></div>
+    <div id="hud-prompt" hidden></div>
+    <select id="jump"></select>
+    <div id="cross"></div>
+    <aside id="placard" hidden>
+      <div class="reg"></div>
+      <h2></h2>
+      <p class="body"></p>
+      <p class="src"></p>
+    </aside>
+  </div>
+
+  <div id="touch" hidden>
+    <div id="pad"></div>
+    <button id="btn-through" hidden>Step through</button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
